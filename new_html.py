@@ -14,15 +14,15 @@ html_content = f"""
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Цитаты Гражданина</title>
-    <script>
+</head>
+<body>
+ <script>
         function getRandomQuote() {{
             var quotes = {quotes};
             var randomIndex = Math.floor(Math.random() * quotes.length);
             document.getElementById('quoteDisplay').innerText = quotes[randomIndex];
         }}
     </script>
-</head>
-<body>
     <h1>Цитаты Гражданина</h1>
     <p id="quoteDisplay">Нажмите на кнопку, чтобы увидеть случайную цитату.</p>
     <button onclick="getRandomQuote()">Показать цитату</button>

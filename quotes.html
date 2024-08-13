@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Цитаты Гражданина</title>
-    <script>
+</head>
+<body>
+ <script>
         function getRandomQuote() {
             var quotes = ['Всё, к чему я прикасаюсь, всё, что меня окружает... всё это разрушается, калечится, гибнет. Разрушение — единственное, что у меня получается хорошо. Пусть будет так.', 'пусть теперь все знают, крыс чревато злить, мор всё приближается, его не пережить', 'Этой ночью Сергей Разумовский умер. теперь есть только Чумной Доктор', 'Огонь все вылечит', 'Нравственность и закон бессильны там, где правят деньги!'];
             var randomIndex = Math.floor(Math.random() * quotes.length);
             document.getElementById('quoteDisplay').innerText = quotes[randomIndex];
         }
     </script>
-</head>
-<body>
     <h1>Цитаты Гражданина</h1>
     <p id="quoteDisplay">Нажмите на кнопку, чтобы увидеть случайную цитату.</p>
     <button onclick="getRandomQuote()">Показать цитату</button>
